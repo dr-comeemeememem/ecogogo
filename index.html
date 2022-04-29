@@ -5,6 +5,62 @@
     <title>Ecogogo</title>
   </head>
   <body>
+    <script>
+      const element = document.getElementById(INPUT);
+      function a() {
+        if (element.includes("https://")) {
+          alert("use the url button for a url");
+        }else{
+          location.replace("https://google.com/search?q=" + element) ;
+        }
+      } 
+      function b() {
+        if (element.includes("https://")) {
+          alert("use the url button for a url");
+        }else{
+          location.replace("https://bing.com/search?q=" + element) ;
+        }
+      function c() {
+        if (element.includes("https://")) {
+          alert("use the url button for a url");
+        }else{
+          location.replace("https://duckduckgo.com/?q=" + element + "&t=h_&ia=web") ;
+        }
+      }
+      function d() {
+        if (element.includes("https://")) {
+          alert("use the url button for a url");
+        }else{
+          location.replace("https://www.ecosia.org/search?method=index&q=" + element) ;
+        }
+      }
+      function e() {
+        if (element.includes("https://")) {
+          alert("use the url button for a url");
+        }else{
+          location.replace("https://oceanhero.today/web?q=" + element) ;
+        }
+      }
+      function url()
+        if(element.includes("https://") == false) {
+          alert("Hmm... the link you are trying to go to isnt a link if you are searching for something use the other buttons");
+        }else{
+          location.replace(element);
+        }
+      }
+      var a = document.querySelector("#testid a");
+      a.onclick = a()
+      var b = document.querySelector("#testid1 a");
+      b.onclick = b()
+      var c = document.querySelector("#testid2 a");
+      c.onclick = c()
+      var d = document.querySelector("#testid3 a");
+      d.onclick = d()
+      var e = document.querySelector("#testid4 a");
+      e.onclick = e()
+      var f = document.querySelector("#testid5 a");
+      f.onclick = url()
+    </script>
     <style>
       body {
  background-image: url("https://www.bing.com/th?id=OHR.CrystalCave_EN-US8679086426_tmb.jpg&amp;rf=");
@@ -60,12 +116,12 @@
     <div class="dropdown">
       <button class="dropbtn">Search with</button>
       <div class="dropdown-content">
-            <a href="https://google.com/search?q='INPUT'">google</a>
-            <a href="https://bing.com/search?q=%q">Bing</a>
-            <a href="https://duckduckgo.com/?q=%INPUT&t=h_&ia=web">Duck Duck Go</a>
-            <a href="https://www.ecosia.org/search?method=index&q=%INPUT">Ecosia</a>
-            <a href="https://oceanhero.today/web?q=%INPUT">Ocean Hero</a>
-            <a href="https://%INPUT">Url</a>
+            <div id="testid"><div><div><a href="#">Google</a><div><div><div>
+            <div id="testid1"><div><div><a href="#">Bing</a><div><div><div>
+            <div id="testid2"><div><div><a href="#">Duck Duck Go</a><div><div><div>
+            <div id="testid3"><div><div><a href="#">Ecosia</a><div><div><div>
+            <div id="testid4"><div><div><a href="#">Ocean Hero</a><div><div><div>
+            <div id="testid5"><div><div><a href="#">Url</a><div><div><div>
       </div>
   </div>
   </body>
