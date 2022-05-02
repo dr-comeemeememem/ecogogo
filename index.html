@@ -11,41 +11,41 @@
         if (element.includes("https://")) {
           alert("use the url button for a url");
         }else{
-          location.replace("https://google.com/search?q=" + element) ;
+          window.replace("https://google.com/search?q=" + element) ;
         }
       } 
       function b() {
         if (element.includes("https://")) {
           alert("use the url button for a url");
         }else{
-          location.replace("https://bing.com/search?q=" + element) ;
+          window.replace("https://bing.com/search?q=" + element) ;
         }
       function c() {
         if (element.includes("https://")) {
           alert("use the url button for a url");
         }else{
-          location.replace("https://duckduckgo.com/?q=" + element + "&t=h_&ia=web") ;
+          window.replace("https://duckduckgo.com/?q=" + element + "&t=h_&ia=web") ;
         }
       }
       function d() {
         if (element.includes("https://")) {
           alert("use the url button for a url");
         }else{
-          location.replace("https://www.ecosia.org/search?method=index&q=" + element) ;
+          window.replace("https://www.ecosia.org/search?method=index&q=" + element) ;
         }
       }
       function e() {
         if (element.includes("https://")) {
           alert("use the url button for a url");
         }else{
-          location.replace("https://oceanhero.today/web?q=" + element) ;
+          window.replace("https://oceanhero.today/web?q=" + element) ;
         }
       }
       function url()
         if(element.includes("https://") == false) {
           alert("Hmm... the link you are trying to go to isnt a link if you are searching for something use the other buttons");
         }else{
-          location.replace(element);
+          window.replace(element);
         }
       
     </script>
@@ -98,6 +98,7 @@
     <h3>
       Type url or search item
     </h3>
+    <form>
     <div class="box">
         <input type="search" class="box" placeholder="Search the web..." id="INPUT" name="q" required/>
     </div>
@@ -112,5 +113,6 @@
         <a href="javascript:url();">Url</a>
       </div>
   </div>
+    </form>
   </body>
 </html>
